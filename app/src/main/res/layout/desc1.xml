@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".Descrip.Desc1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DF0E0B1E"
+        >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ecoutez de la musique illimitée"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            />
+        <View
+            android:id="@+id/vw"
+            android:layout_width="100dp"
+            android:layout_height="3dp"
+            android:layout_below="@id/tv"
+            android:background="@color/red"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ecoutez +40000 sons et +1600 artistes"
+            android:textColor="@color/gris"
+            android:layout_below="@id/vw"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/tel1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tv1"
+            android:layout_above="@id/view1"
+            android:src="@drawable/tel1"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_above="@id/skip1"
+            android:background="@color/red"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            />
+
+        <TextView
+            android:id="@+id/skip1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sauter maintenant"
+            android:layout_above="@id/btn_c1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_c1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Continuer"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/red"
+            android:padding="8dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:onClick="Continuer"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
